@@ -16,7 +16,7 @@
   }
 
   .logo:not(:first-child) {
-    margin-left: $baseIndent;
+    margin-left: 3*$baseIndent;
   }
 }
 

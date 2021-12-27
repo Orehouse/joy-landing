@@ -16,9 +16,9 @@
   }
 
   @media (min-width: $xs) {
-    padding: math.div($baseIndent, 3) math.div($baseIndent, 2);
+    padding: $baseIndent math.div(3*$baseIndent, 2);
   }
   @media (min-width: $md) {
-    padding: math.div($baseIndent, 2) $baseIndent;
+    padding: math.div(3*$baseIndent, 2) 3*$baseIndent;
   }
 }
