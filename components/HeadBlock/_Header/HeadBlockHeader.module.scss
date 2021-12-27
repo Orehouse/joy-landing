@@ -9,15 +9,15 @@
 
 .logos {
   margin-right: auto;
+}
 
-  .logo {
-    display: flex;
-    align-items: center;
-  }
+.logo {
+  display: flex;
+  align-items: center;
+}
 
-  .logo:not(:first-child) {
-    margin-left: 3*$baseIndent;
-  }
+.logo:not(:first-child) {
+  margin-left: 3*$baseIndent;
 }
 
 .logos, .buttons {
