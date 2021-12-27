@@ -1,0 +1,31 @@
+@use "sass:math";
+@import "../../styles/mixins";
+
+.background {
+  background: linear-gradient(135deg, #026666 0%, #3ab8bc 51.04%, #ffd003 100%);
+}
+
+.title {
+  @include ld_font_h1();
+  $marginStep: math.div($baseIndent, 3);
+  color: $ld_color_white;
+  text-align: center;
+  margin-bottom: $baseIndent + 2*$marginStep;
+
+  @media (min-width: $xs) {
+    margin-top: $baseIndent + $marginStep;
+  }
+  @media (min-width: $sm) {
+    margin-top: $baseIndent + 2*$marginStep;
+  }
+  @media (min-width: $md) {
+    margin-top: $baseIndent + 3*$marginStep;
+  }
+  @media (min-width: $lg) {
+    margin-top: $baseIndent + 4*$marginStep;
+  }
+  @media (min-width: $xl) {
+    margin-top: $baseIndent + 5*$marginStep;
+    margin-bottom: $baseIndent + 3*$marginStep;
+  }
+}

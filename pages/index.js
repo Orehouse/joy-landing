@@ -1,7 +1,7 @@
-import Header from '../components/Header/Header';
+import HeadBlock from '../components/HeadBlock/HeadBlock';
 
 export default function Home() {
   return (
-      <Header/>
+      <HeadBlock/>
   );
 }

@@ -1,0 +1,21 @@
+@import "../../../styles/mixins";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .card {
+    background-color: $ld_color_white;
+
+    .title {
+      text-align: center;
+    }
+
+    .description {
+      text-align: center;
+    }
+  }
+}
