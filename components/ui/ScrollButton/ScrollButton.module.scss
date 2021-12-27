@@ -1,0 +1,11 @@
+@import "../../../styles/mixins";
+
+.scrollButton {
+  @include ld_shadow_noHover();
+  border: none;
+  background-color: $ld_color_white;
+  border-radius: 50%;
+  width: 8*$baseIndent;
+  height: 8*$baseIndent;
+  cursor: pointer;
+}
