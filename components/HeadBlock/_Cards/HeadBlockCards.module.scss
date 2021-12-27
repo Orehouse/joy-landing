@@ -13,6 +13,7 @@
     background-color: $ld_color_white;
     color: $ld_color_black;
     border-radius: 15px;
+    text-align: center;
 
     @media (min-width: $xs) {
       padding: $baseIndent;
@@ -37,27 +38,31 @@
 
     .title {
       @include ld_font_h3();
-      text-align: center;
+      display: inline-block;
       @media (min-width: $xs) {
         margin-bottom: math.div($baseIndent, 2);
+        width: 160px;
       }
       @media (min-width: $sm) {
+        width: 160px;
         margin-bottom: math.div($baseIndent, 2);
       }
       @media (min-width: $md) {
+        width: 100%;
         margin-bottom: $baseIndent;
       }
       @media (min-width: $lg) {
+        width: 100%;
         margin-bottom: $baseIndent;
       }
       @media (min-width: $xl) {
+        width: 100%;
         margin-bottom: 2*$baseIndent;
       }
     }
 
     .description {
       @include ld_font_text();
-      text-align: center;
     }
   }
 }
