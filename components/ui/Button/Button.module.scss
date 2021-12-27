@@ -1,0 +1,24 @@
+@use "sass:math";
+@import "styles/mixins";
+
+.button {
+  background: $ld_color_g2;
+  box-shadow: 0 0 20px rgb(246 146 30 / 60%);
+  border-radius: 6px;
+  cursor: pointer;
+  border: 0;
+  text-transform: uppercase;
+
+  @include ld_font_menu();
+
+  &:hover {
+    background: $ld_color_hoverG2;
+  }
+
+  @media (min-width: $xs) {
+    padding: math.div($baseIndent, 3) math.div($baseIndent, 2);
+  }
+  @media (min-width: $md) {
+    padding: math.div($baseIndent, 2) $baseIndent;
+  }
+}
