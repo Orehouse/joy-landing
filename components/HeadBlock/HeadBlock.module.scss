@@ -27,3 +27,33 @@
     margin-bottom: 6*$baseIndent;
   }
 }
+
+.register {
+  text-align: center;
+  margin-top: 5*$baseIndent;
+  @media (max-width: $sm) {
+    margin-top: 0;
+    margin-bottom: 7*$baseIndent;
+  }
+}
+
+.mobileReverse {
+  @media (max-width: $sm) {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+}
+
+.scrollSection {
+  height: 4*$baseIndent;
+  text-align: center;
+  @media (min-width: $xs) {
+    margin-top: 7*$baseIndent;
+  }
+  @media (min-width: $sm) {
+    margin-top: 5*$baseIndent;
+  }
+  @media (min-width: $xl) {
+    margin-top: 7*$baseIndent;
+  }
+}

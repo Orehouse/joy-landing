@@ -3,6 +3,8 @@ import HeadBlockHeader from './_Header/HeadBlockHeader';
 
 import styles from './HeadBlock.module.scss';
 import HeadBlockCards from './_Cards/HeadBlockCards';
+import Button from '../ui/Button/Button';
+import ScrollButton from '../ui/ScrollButton/ScrollButton';
 
 const cardsData = [
   {
@@ -31,7 +33,11 @@ function HeadBlock() {
   return <BlockTemplate backgroundClassName={styles.background}>
     <HeadBlockHeader/>
     <h1 className={styles.title}>Joyteka — для тех, кто хочет большего</h1>
-    <HeadBlockCards cards={cardsData}/>
+    <div className={styles.mobileReverse}>
+      <HeadBlockCards cards={cardsData}/>
+      <div className={styles.register}><Button>Зарегистрироваться</Button></div>
+    </div>
+    <div className={styles.scrollSection}><ScrollButton/></div>
   </BlockTemplate>;
 }
 
