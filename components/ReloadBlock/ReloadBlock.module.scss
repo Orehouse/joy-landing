@@ -1,0 +1,86 @@
+@import "../../styles/mixins";
+
+.reload {
+  @include ld_font_text();
+  color: $ld_color_black;
+  display: flex;
+  margin-top: 19*$baseIndent;
+  @media (min-width: $xl) {
+    padding-left: 12*$baseIndent;
+  }
+  @media (max-width: $sm) {
+    flex-flow: column;
+  }
+
+  .title {
+    @include ld_font_h2();
+
+    @media (min-width: $xs) {
+      max-width: 250px;
+    }
+    @media (min-width: $sm) {
+      max-width: 260px;
+    }
+    @media (min-width: $md) {
+      max-width: 280px;
+    }
+    @media (min-width: $lg) {
+      max-width: 320px;
+    }
+    @media (min-width: $xl) {
+      max-width: 350px;
+    }
+  }
+
+  .column__left {
+    margin-right: 2*$baseIndent;
+  }
+
+  .column__right {
+    @media (max-width: $sm) {
+      margin-left: 6*$baseIndent;
+      margin-top: $baseIndent;
+    }
+  }
+
+  .stage {
+    margin-top: 7*$baseIndent;
+
+    @media (min-width: $xs) {
+      width: 216px;
+    }
+    @media (min-width: $sm) {
+      width: 335px;
+    }
+    @media (min-width: $md) {
+      width: 464px;
+    }
+    @media (min-width: $lg) {
+      width: 470px;
+    }
+    @media (min-width: $xl) {
+      width: 520px;
+    }
+    @media (max-width: $sm) {
+      margin-top: 5*$baseIndent;
+    }
+  }
+
+  .stage__image {
+    @media (min-width: $xs) {
+      width: 262px;
+    }
+    @media (min-width: $sm) {
+      width: 336px;
+    }
+    @media (min-width: $md) {
+      width: 360px;
+    }
+    @media (min-width: $lg) {
+      width: 336px;
+    }
+    @media (min-width: $xl) {
+      width: 360px;
+    }
+  }
+}
