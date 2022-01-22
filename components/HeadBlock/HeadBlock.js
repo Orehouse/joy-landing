@@ -1,4 +1,4 @@
-import BlockTemplate from '../PageTemplate/BlockTemplate';
+import BlockTemplate from '../BlockTemplate/BlockTemplate';
 import HeadBlockHeader from './_Header/HeadBlockHeader';
 
 import styles from './HeadBlock.module.scss';
