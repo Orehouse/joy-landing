@@ -1,4 +1,5 @@
 import classnames from 'classnames';
+import PropTypes from 'prop-types';
 
 import styles from './BlockTemplate.module.scss';
 
@@ -10,5 +11,14 @@ function BlockTemplate(props) {
     </div>
   </div>;
 }
+
+BlockTemplate.propTypes = {
+  children: PropTypes.node.isRequired,
+  backgroundClassName: PropTypes.string,
+};
+
+BlockTemplate.defaultProps = {
+  backgroundClassName: null,
+};
 
 export default BlockTemplate;
