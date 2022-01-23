@@ -10,6 +10,12 @@
   gap: 2*$baseIndent;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .card {
+    margin: math.div($baseIndent, 2);
+  }
+}
+
 .card {
   background-color: $ld_color_white;
   color: $ld_color_black;

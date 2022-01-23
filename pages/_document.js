@@ -11,12 +11,15 @@ class MyDocument extends Document {
         <Html>
           <Head>
             <title>Joyteka</title>
-            <link href="http://fonts.googleapis.com/css?family=Roboto"
-                  rel="stylesheet" type="text/css"/>
-            <link href="http://fonts.googleapis.com/css?family=Russo+One"
-                  rel="stylesheet" type="text/css"/>
-            <link href="http://fonts.googleapis.com/css?family=Lora"
-                  rel="stylesheet" type="text/css"/>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+                rel="stylesheet" type="text/css"/>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+                rel="stylesheet" type="text/css"/>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap"
+                rel="stylesheet" type="text/css"/>
           </Head>
           <body>
           <Main/>
