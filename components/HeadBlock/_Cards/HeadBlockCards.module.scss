@@ -18,7 +18,6 @@
 
 .card {
   background-color: $ld_color_white;
-  color: $ld_color_black;
   border-radius: 15px;
   text-align: center;
 
@@ -67,8 +66,4 @@
     width: 100%;
     margin-bottom: 2*$baseIndent;
   }
-}
-
-.description {
-  @include ld_font_text();
 }

@@ -2,6 +2,8 @@
 
 .blockTemplate {
   display: flex;
+  @include ld_font_text();
+  color: $ld_color_black;
 }
 
 .content {

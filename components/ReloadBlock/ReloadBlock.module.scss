@@ -1,8 +1,6 @@
 @import "../../styles/mixins";
 
 .reload {
-  @include ld_font_text();
-  color: $ld_color_black;
   display: flex;
   margin-top: 19*$baseIndent;
   @media (min-width: $xl) {

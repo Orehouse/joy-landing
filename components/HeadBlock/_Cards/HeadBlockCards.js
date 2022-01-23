@@ -7,7 +7,7 @@ function HeadBlockCards(props) {
         (card, index) => (
             <div key={index} className={styles.card}>
               <div className={styles.title}>{card.title}</div>
-              <div className={styles.description}>{card.description}</div>
+              <div>{card.description}</div>
             </div>
         ))}
   </div>;
