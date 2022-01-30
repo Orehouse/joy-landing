@@ -1,0 +1,61 @@
+@import "../../../styles/mixins";
+
+.benefitsListItem {
+  display: flex;
+  align-items: center;
+  padding: 3*$baseIndent 6*$baseIndent;
+  border-radius: 15px;
+  transition: ease-out 0.15s;
+  @media (max-width: $xl) {
+    padding: 3*$baseIndent;
+  }
+  @media (max-width: $lg) {
+    padding: 3*$baseIndent;
+  }
+  @media (max-width: $md) {
+    padding: 2*$baseIndent 3*$baseIndent;
+  }
+  @media (max-width: $sm) {
+    padding: 2*$baseIndent;
+    flex-flow: column;
+    align-items: start;
+    color: $ld_color_black;
+  }
+
+  &__active {
+    color: $ld_color_white;
+    background-color: $ld_color_turquoise;
+    box-shadow: 0 0 20px rgba($ld_color_turquoise, 0.4);
+  }
+
+  &Title {
+    @include ld_font_h2();
+    flex-shrink: 0;
+    width: 54*$baseIndent;
+    margin-right: 12*$baseIndent;
+
+    @media (max-width: $xl) {
+      width: 39*$baseIndent;
+      margin-right: 6*$baseIndent;
+    }
+
+    @media (max-width: $lg) {
+      width: 34*$baseIndent;
+    }
+
+    @media (max-width: $md) {
+      width: 30*$baseIndent;
+      margin-right: 3*$baseIndent;
+    }
+
+    @media (max-width: $sm) {
+      width: 32*$baseIndent;
+      margin-bottom: 3*$baseIndent;
+      margin-right: 0;
+    }
+  }
+
+  &Description {
+    @include ld_font_text();
+  }
+}

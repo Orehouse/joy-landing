@@ -1,0 +1,24 @@
+@import "../../styles/mixins";
+
+.benefitsList {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 129*$baseIndent;
+
+  @media (max-width: $xl) {
+    width: 96*$baseIndent;
+  }
+
+  @media (max-width: $lg) {
+    width: 90*$baseIndent;
+  }
+
+  @media (max-width: $md) {
+    width: 66*$baseIndent;
+  }
+
+  @media (max-width: $sm) {
+    width: 36*$baseIndent;
+  }
+}
