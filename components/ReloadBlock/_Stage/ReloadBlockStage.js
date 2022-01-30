@@ -1,4 +1,4 @@
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 import styles from './ReloadBlockStage.module.scss';
 
@@ -11,8 +11,8 @@ function ReloadBlockStage(props) {
 }
 
 ReloadBlockStage.propTypes = {
-  label: propTypes.string.isRequired,
-  children: propTypes.node.isRequired,
+  label: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default ReloadBlockStage;

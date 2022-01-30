@@ -1,4 +1,4 @@
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 import styles from './WhatsNewBlockFeature.module.scss';
 
@@ -11,8 +11,8 @@ function WhatsNewBlockFeature(props) {
 }
 
 WhatsNewBlockFeature.propTypes = {
-  title: propTypes.string.isRequired,
-  children: propTypes.node.isRequired,
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default WhatsNewBlockFeature;
