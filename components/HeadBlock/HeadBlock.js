@@ -30,14 +30,18 @@ const cardsData = [
 ];
 
 function HeadBlock() {
-  return <BlockTemplate backgroundClassName={styles.background}>
+  return <BlockTemplate backgroundClassName={styles.headBlockBackground}>
     <HeadBlockHeader/>
-    <h1 className={styles.title}>Joyteka — для тех, кто хочет большего</h1>
-    <div className={styles.mobileReverse}>
+    <h1 className={styles.headBlockTitle}>
+      Joyteka — для тех, кто хочет большего
+    </h1>
+    <div className={styles.headBlockMobileReverse}>
       <HeadBlockCards cards={cardsData}/>
-      <div className={styles.register}><Button>Зарегистрироваться</Button></div>
+      <div className={styles.headBlockRegister}>
+        <Button>Зарегистрироваться</Button>
+      </div>
     </div>
-    <div className={styles.scrollSection}><ScrollButton/></div>
+    <div className={styles.headBlockScrollSection}><ScrollButton/></div>
   </BlockTemplate>;
 }
 

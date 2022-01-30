@@ -6,7 +6,7 @@ import styles from './BlockTemplate.module.scss';
 function BlockTemplate(props) {
   const {children, backgroundClassName} = props;
   return <div className={classnames(styles.blockTemplate, backgroundClassName)}>
-    <div className={styles.content}>
+    <div className={styles.blockTemplateContent}>
       {children}
     </div>
   </div>;

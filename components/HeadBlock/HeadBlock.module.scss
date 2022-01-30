@@ -1,59 +1,61 @@
 @import "../../styles/mixins";
 
-.background {
-  background: linear-gradient(135deg, #026666 0%, #3ab8bc 51.04%, #ffd003 100%);
-}
-
-.title {
-  @include ld_font_h1();
-  color: $ld_color_white;
-  text-align: center;
-  margin-bottom: 5*$baseIndent;
-
-  @media (min-width: $xs) {
-    margin-top: 4*$baseIndent;
+.headBlock {
+  &Background {
+    background: linear-gradient(135deg, #026666 0%, #3ab8bc 51.04%, #ffd003 100%);
   }
-  @media (min-width: $sm) {
+
+  &Title {
+    @include ld_font_h1();
+    color: $ld_color_white;
+    text-align: center;
+    margin-bottom: 5*$baseIndent;
+
+    @media (min-width: $xs) {
+      margin-top: 4*$baseIndent;
+    }
+    @media (min-width: $sm) {
+      margin-top: 5*$baseIndent;
+    }
+    @media (min-width: $md) {
+      margin-top: 6*$baseIndent;
+    }
+    @media (min-width: $lg) {
+      margin-top: 7*$baseIndent;
+    }
+    @media (min-width: $xl) {
+      margin-top: 8*$baseIndent;
+      margin-bottom: 6*$baseIndent;
+    }
+  }
+
+  &Register {
+    text-align: center;
     margin-top: 5*$baseIndent;
+    @media (max-width: $sm) {
+      margin-top: 0;
+      margin-bottom: 7*$baseIndent;
+    }
   }
-  @media (min-width: $md) {
-    margin-top: 6*$baseIndent;
-  }
-  @media (min-width: $lg) {
-    margin-top: 7*$baseIndent;
-  }
-  @media (min-width: $xl) {
-    margin-top: 8*$baseIndent;
-    margin-bottom: 6*$baseIndent;
-  }
-}
 
-.register {
-  text-align: center;
-  margin-top: 5*$baseIndent;
-  @media (max-width: $sm) {
-    margin-top: 0;
-    margin-bottom: 7*$baseIndent;
+  &MobileReverse {
+    @media (max-width: $sm) {
+      display: flex;
+      flex-flow: column-reverse;
+    }
   }
-}
 
-.mobileReverse {
-  @media (max-width: $sm) {
-    display: flex;
-    flex-flow: column-reverse;
-  }
-}
-
-.scrollSection {
-  height: 4*$baseIndent;
-  text-align: center;
-  @media (min-width: $xs) {
-    margin-top: 7*$baseIndent;
-  }
-  @media (min-width: $sm) {
-    margin-top: 5*$baseIndent;
-  }
-  @media (min-width: $xl) {
-    margin-top: 7*$baseIndent;
+  &ScrollSection {
+    height: 4*$baseIndent;
+    text-align: center;
+    @media (min-width: $xs) {
+      margin-top: 7*$baseIndent;
+    }
+    @media (min-width: $sm) {
+      margin-top: 5*$baseIndent;
+    }
+    @media (min-width: $xl) {
+      margin-top: 7*$baseIndent;
+    }
   }
 }

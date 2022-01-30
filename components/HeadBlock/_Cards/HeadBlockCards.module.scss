@@ -1,69 +1,69 @@
 @use "sass:math";
 @import "../../../styles/mixins";
 
-.container {
+.headBlockCards {
   display: flex;
   flex-direction: row;
   align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
   gap: 2*$baseIndent;
-}
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .card {
-    margin: math.div($baseIndent, 2);
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    &Item {
+      margin: math.div($baseIndent, 2);
+    }
   }
-}
 
-.card {
-  background-color: $ld_color_white;
-  border-radius: 15px;
-  text-align: center;
+  &Item {
+    background-color: $ld_color_white;
+    border-radius: 15px;
+    text-align: center;
 
-  @media (min-width: $xs) {
-    padding: $baseIndent;
-    width: 216px;
+    @media (min-width: $xs) {
+      padding: $baseIndent;
+      width: 216px;
+    }
+    @media (min-width: $sm) {
+      padding: $baseIndent;
+      width: 256px;
+    }
+    @media (min-width: $md) {
+      padding: 2*$baseIndent;
+      width: 320px
+    }
+    @media (min-width: $lg) {
+      padding: 2*$baseIndent;
+      width: 272px;
+    }
+    @media (min-width: $xl) {
+      padding: 3*$baseIndent;
+      width: 372px;
+    }
   }
-  @media (min-width: $sm) {
-    padding: $baseIndent;
-    width: 256px;
-  }
-  @media (min-width: $md) {
-    padding: 2*$baseIndent;
-    width: 320px
-  }
-  @media (min-width: $lg) {
-    padding: 2*$baseIndent;
-    width: 272px;
-  }
-  @media (min-width: $xl) {
-    padding: 3*$baseIndent;
-    width: 372px;
-  }
-}
 
-.title {
-  @include ld_font_h3();
-  display: inline-block;
-  @media (min-width: $xs) {
-    margin-bottom: math.div($baseIndent, 2);
-    width: 160px;
-  }
-  @media (min-width: $sm) {
-    width: 160px;
-    margin-bottom: math.div($baseIndent, 2);
-  }
-  @media (min-width: $md) {
-    width: 100%;
-    margin-bottom: $baseIndent;
-  }
-  @media (min-width: $lg) {
-    width: 100%;
-    margin-bottom: $baseIndent;
-  }
-  @media (min-width: $xl) {
-    width: 100%;
-    margin-bottom: 2*$baseIndent;
+  &Title {
+    @include ld_font_h3();
+    display: inline-block;
+    @media (min-width: $xs) {
+      margin-bottom: math.div($baseIndent, 2);
+      width: 160px;
+    }
+    @media (min-width: $sm) {
+      width: 160px;
+      margin-bottom: math.div($baseIndent, 2);
+    }
+    @media (min-width: $md) {
+      width: 100%;
+      margin-bottom: $baseIndent;
+    }
+    @media (min-width: $lg) {
+      width: 100%;
+      margin-bottom: $baseIndent;
+    }
+    @media (min-width: $xl) {
+      width: 100%;
+      margin-bottom: 2*$baseIndent;
+    }
   }
 }

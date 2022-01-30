@@ -11,17 +11,17 @@ import stickersImg from '../../public/images/stickers.png';
 
 function ReloadBlock() {
   return <BlockTemplate>
-    <div className={styles.reload}>
-      <div className={styles.column__left}>
-        <h2 className={styles.title}>
+    <div className={styles.reloadBlock}>
+      <div className={styles.reloadBlockColumn__left}>
+        <h2 className={styles.reloadBlockTitle}>
           Перезагрузка:
         </h2>
       </div>
-      <div className={styles.column__right}>
-        <h2 className={styles.title}>
+      <div className={styles.reloadBlockColumn__right}>
+        <h2 className={styles.reloadBlockTitle}>
           качество, удобство, возможности
         </h2>
-        <div className={styles.stage}>
+        <div className={styles.reloadBlockStage}>
           <ReloadBlockStage label={'2018'}>
             Learnis — это наш первый опыт по созданию платформы. С 2018 года мы
             собирали обратную связь от вас, тестировали функции, изучали, что
@@ -29,10 +29,12 @@ function ReloadBlock() {
             запоминающиеся уроки.
           </ReloadBlockStage>
         </div>
-        <div className={classnames(styles.stage, styles.stage__image)}>
+        <div className={
+          classnames(styles.reloadBlockStage, styles.reloadBlockStage__image)}
+        >
           <Image src={stickersImg} alt="Stickers"/>
         </div>
-        <div className={styles.stage}>
+        <div className={styles.reloadBlockStage}>
           <ReloadBlockStage label={'2021'}>
             За эти годы мы набрались опыта и накопили много идей, какую
             платформу хотим для вас сделать. Выход был один — начать с нуля. Так

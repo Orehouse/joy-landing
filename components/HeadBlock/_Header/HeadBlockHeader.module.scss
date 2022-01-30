@@ -1,55 +1,55 @@
 @import "../../../styles/mixins";
 
-.header {
+.headBlockHeader {
   display: flex;
   align-items: center;
   height: 82px;
-}
 
-.logos {
-  margin-right: auto;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo:not(:first-child) {
-  margin-left: 3*$baseIndent;
-}
-
-.logos, .buttons {
-  display: flex;
-}
-
-@media (max-width: $sm) {
-  .buttons {
-    display: none;
+  &Logos {
+    margin-right: auto;
   }
-  .logos {
-    margin-right: 0;
-  }
-}
 
-.line {
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 16px;
-  background-image: url("../../../public/images/header/line-xs.svg");
-  background-position: center;
+  &Logo {
+    display: flex;
+    align-items: center;
+  }
 
-  @media (min-width: $sm) {
-    background-image: url("../../../public/images/header/line-s.svg");
+  &Logo:not(:first-child) {
+    margin-left: 3*$baseIndent;
   }
-  @media (min-width: $md) {
-    background-image: url("../../../public/images/header/line-m.svg");
+
+  &Logos, &Buttons {
+    display: flex;
   }
-  @media (min-width: $lg) {
-    background-image: url("../../../public/images/header/line-l.svg");
+
+  @media (max-width: $sm) {
+    &Buttons {
+      display: none;
+    }
+    &Logos {
+      margin-right: 0;
+    }
   }
-  @media (min-width: $xl) {
-    background-image: url("../../../public/images/header/line-xl.svg");
+
+  &Line {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 16px;
+    background-image: url("../../../public/images/header/line-xs.svg");
+    background-position: center;
+
+    @media (min-width: $sm) {
+      background-image: url("../../../public/images/header/line-s.svg");
+    }
+    @media (min-width: $md) {
+      background-image: url("../../../public/images/header/line-m.svg");
+    }
+    @media (min-width: $lg) {
+      background-image: url("../../../public/images/header/line-l.svg");
+    }
+    @media (min-width: $xl) {
+      background-image: url("../../../public/images/header/line-xl.svg");
+    }
   }
 }

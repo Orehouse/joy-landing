@@ -4,24 +4,25 @@
   display: flex;
   @include ld_font_text();
   color: $ld_color_black;
+
+  &Content {
+    margin: 0 auto;
+
+    @media (min-width: $xs) {
+      width: 288px;
+    }
+    @media (min-width: $sm) {
+      width: $smc;
+    }
+    @media (min-width: $md) {
+      width: $mdc;
+    }
+    @media (min-width: $lg) {
+      width: $lgc;
+    }
+    @media (min-width: $xl) {
+      width: $xlc;
+    }
+  }
 }
 
-.content {
-  margin: 0 auto;
-
-  @media (min-width: $xs) {
-    width: 288px;
-  }
-  @media (min-width: $sm) {
-    width: $smc;
-  }
-  @media (min-width: $md) {
-    width: $mdc;
-  }
-  @media (min-width: $lg) {
-    width: $lgc;
-  }
-  @media (min-width: $xl) {
-    width: $xlc;
-  }
-}

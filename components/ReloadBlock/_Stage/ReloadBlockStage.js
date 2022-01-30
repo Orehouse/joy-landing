@@ -5,8 +5,8 @@ import styles from './ReloadBlockStage.module.scss';
 function ReloadBlockStage(props) {
   const {label, children} = props;
   return <>
-    <div className={styles.label}>{label}</div>
-    <div className={styles.description}>{children}</div>
+    <div className={styles.reloadBlockStageLabel}>{label}</div>
+    <div className={styles.reloadBlockStageDescription}>{children}</div>
   </>;
 }
 

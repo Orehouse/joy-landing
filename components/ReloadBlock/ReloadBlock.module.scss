@@ -1,6 +1,6 @@
 @import "../../styles/mixins";
 
-.reload {
+.reloadBlock {
   display: flex;
   margin-top: 19*$baseIndent;
   @media (min-width: $xl) {
@@ -10,7 +10,7 @@
     flex-flow: column;
   }
 
-  .title {
+  &Title {
     @include ld_font_h2();
 
     @media (min-width: $xs) {
@@ -30,18 +30,18 @@
     }
   }
 
-  .column__left {
+  &Column__left {
     margin-right: 2*$baseIndent;
   }
 
-  .column__right {
+  &Column__right {
     @media (max-width: $sm) {
       margin-left: 6*$baseIndent;
       margin-top: $baseIndent;
     }
   }
 
-  .stage {
+  &Stage {
     margin-top: 7*$baseIndent;
 
     @media (min-width: $xs) {
@@ -64,7 +64,7 @@
     }
   }
 
-  .stage__image {
+  &Stage__image {
     @media (min-width: $xs) {
       width: 262px;
     }

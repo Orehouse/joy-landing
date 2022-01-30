@@ -9,20 +9,20 @@ import styles from './HeadBlockHeader.module.scss';
 
 function HeadBlockHeader() {
   return <>
-    <div className={styles.header}>
-      <div className={styles.logos}>
-        <span className={styles.logo}>
+    <div className={styles.headBlockHeader}>
+      <div className={styles.headBlockHeaderLogos}>
+        <span className={styles.headBlockHeaderLogo}>
           <Image src={logoJoyteka} alt="Joyteka"/>
         </span>
-        <span className={styles.logo}>
+        <span className={styles.headBlockHeaderLogo}>
           <Image src={logoLearnis} alt="Learnis"/>
         </span>
       </div>
-      <div className={styles.buttons}>
+      <div className={styles.headBlockHeaderButtons}>
         <Button>Зарегистрироваться</Button>
       </div>
     </div>
-    <div className={styles.line}/>
+    <div className={styles.headBlockHeaderLine}/>
   </>;
 }
 
