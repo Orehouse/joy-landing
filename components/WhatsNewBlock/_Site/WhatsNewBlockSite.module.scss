@@ -1,0 +1,117 @@
+@import "../../../styles/mixins";
+
+.whatsNewBlockSite {
+  display: flex;
+  @media (max-width: $sm) {
+    flex-flow: column;
+  }
+
+  &Circle {
+    top: -300px;
+    left: -330px;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.6;
+
+    @media (max-width: $xl) {
+      top: -330px;
+      left: -260px;
+    }
+
+    @media (max-width: $lg) {
+      top: -300px;
+      left: -330px;
+    }
+
+    @media (max-width: $md) {
+      top: -180px;
+      left: -230px;
+    }
+
+    @media (max-width: $sm) {
+      top: -160px;
+      left: -130px;
+    }
+  }
+
+  &Quote {
+    @include ld_font_h4();
+    width: 524px;
+    margin-left: -10*$baseIndent;
+
+    @media (max-width: $xl) {
+      width: 480px;
+    }
+
+    @media (max-width: $lg) {
+      width: 435px;
+    }
+
+    @media (max-width: $md) {
+      width: 336px;
+    }
+
+    @media (max-width: $sm) {
+      width: 100%;
+      align-self: end;
+    }
+  }
+
+  hr {
+    width: 360px;
+    opacity: 0.3;
+    border-top: 1px $ld_color_darkGreen solid;
+    margin-bottom: 0;
+    margin-top: 88px;
+
+    @media (max-width: $xl) {
+      width: 336px;
+    }
+    @media (max-width: $lg) {
+      width: 330px;
+      margin-top: 112px;
+    }
+    @media (max-width: $md) {
+      width: 240px;
+      margin-top: 5px;
+    }
+    @media (max-width: $sm) {
+      width: 264px;
+      margin-top: 3*$baseIndent;
+    }
+  }
+
+  &TanyaImg {
+    display: flex;
+    width: 232px;
+    @media (max-width: $md) {
+      width: 192px;
+      margin-top: 26px;
+    }
+    @media (max-width: $sm) {
+      width: 232px;
+      margin-top: 0;
+    }
+  }
+
+  &TanyaSign {
+    @include ld_font_medium();
+    background-color: $ld_color_white;
+    padding: 2*$baseIndent;
+    margin-left: 3*$baseIndent;
+    width: 316px;
+    border-radius: 2*$baseIndent;
+    @media (max-width: $xl) {
+      width: 312px;
+    }
+    @media (max-width: $lg) {
+      width: 312px;
+    }
+    @media (max-width: $md) {
+      width: 254px;
+    }
+    @media (max-width: $sm) {
+      width: 263px;
+    }
+  }
+}
