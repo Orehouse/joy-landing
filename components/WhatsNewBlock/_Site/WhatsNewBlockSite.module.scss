@@ -116,6 +116,8 @@
   }
 
   &Benefits {
+    display: flex;
+    flex-flow: row-reverse;
     margin-top: 10*$baseIndent;
     @media (max-width: $sm) {
       margin-top: 7*$baseIndent;
