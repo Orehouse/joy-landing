@@ -4,6 +4,22 @@ import Image from 'next/image';
 import tanya from '../../../public/images/whatsnew/Tanya.png';
 import Mark from '../../ui/Mark/Mark';
 import WhatsNewBlockFeature from '../_Feature/WhatsNewBlockFeature';
+import BenefitsList from '../../BenefitsList/BenefitsList';
+
+const benefits = [
+  {
+    title: 'Скорость',
+    description: 'Скорость сайта мы сделали выше, чтобы вы не тратили время, ожидая загрузку страниц и созданных уроков.',
+  },
+  {
+    title: 'Многоязычность',
+    description: 'Теперь можно пользоваться платформой не только на русском языке. Вы часто просили нас добавить другие языки, и мы это сделали. Уже доступны русский, английский и украинский. Скоро будет больше.',
+  },
+  {
+    title: 'Удобство',
+    description: 'Всю важную информацию мы вынесли в меню: кнопку ввода кода для учеников, тарифы и смену языка. ',
+  },
+];
 
 function WhatsNewBlockSite() {
   return <WhatsNewBlockFeature title={'Сайт'}>
@@ -28,6 +44,9 @@ function WhatsNewBlockSite() {
         создавать уроки».
         <hr align="right"/>
       </div>
+    </div>
+    <div className={styles.whatsNewBlockSiteBenefits}>
+      <BenefitsList benefits={benefits}/>
     </div>
   </WhatsNewBlockFeature>;
 }
