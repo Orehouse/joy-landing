@@ -1,5 +1,5 @@
 import styles from './WhatsNewBlockSite.module.scss';
-import Circle, {CIRCLE_COLOR} from '../../ui/Circle/Circle';
+import Circle, {CIRCLE_COLOR} from '../../Circle/Circle';
 import Image from 'next/image';
 import tanya from '../../../public/images/whatsnew/Tanya.png';
 import Mark from '../../ui/Mark/Mark';
