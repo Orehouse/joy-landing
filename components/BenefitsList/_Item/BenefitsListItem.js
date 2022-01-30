@@ -4,7 +4,7 @@ import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import styles from './BenefitsListItem.module.scss';
 
-function BenefitsListItem(props, ref) {
+const BenefitsListItem = forwardRef((props, ref) => {
   const {title, description, active} = props;
   return <div ref={ref} className={
     classnames(
@@ -14,7 +14,9 @@ function BenefitsListItem(props, ref) {
     <div className={styles.benefitsListItemTitle}>{title}</div>
     <div className={styles.benefitsListItemDescription}>{description}</div>
   </div>;
-}
+});
+
+BenefitsListItem.displayName = 'BenefitsListItem';
 
 BenefitsListItem.propTypes = {
   title: PropTypes.string.isRequired,
@@ -26,4 +28,4 @@ BenefitsListItem.defaultPropTypes = {
   active: false,
 };
 
-export default forwardRef(BenefitsListItem);
+export default BenefitsListItem;

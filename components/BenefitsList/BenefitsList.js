@@ -1,7 +1,7 @@
-import BenefitsListItem from './_Item/BenefitsListItem';
-
-import styles from './BenefitsList.module.scss';
 import {createRef, useEffect, useState} from 'react';
+
+import BenefitsListItem from './_Item/BenefitsListItem';
+import styles from './BenefitsList.module.scss';
 
 function BenefitsList(props) {
   const {benefits} = props;
@@ -53,7 +53,7 @@ function BenefitsList(props) {
   };
 
   useEffect(() => {
-    viewportCenterRef.current = getViewportCenter();
+    handleResize();
     document.addEventListener('scroll', handleScroll, {passive: true});
     document.addEventListener('resize', handleResize, {passive: true});
     return () => {
