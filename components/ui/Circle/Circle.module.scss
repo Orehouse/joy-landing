@@ -1,0 +1,31 @@
+@import "../../../styles/mixins";
+
+$normalSize: 800px;
+$normalSize_s: 600px;
+$normalSize_xs: 400px;
+
+.circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0.6;
+
+  &DefaultGradient {
+    background: $ld_color_g1;
+  }
+
+  &NormalSize {
+    width: $normalSize;
+    height: $normalSize;
+    @media (max-width: $md) {
+      width: $normalSize_s;
+      height: $normalSize_s;
+    }
+
+    @media (max-width: $sm) {
+      width: $normalSize_xs;
+      height: $normalSize_xs;
+    }
+  }
+}
+
