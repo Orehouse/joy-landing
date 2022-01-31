@@ -8,7 +8,7 @@ import WhatsNewBlockFeature from '../_Feature/WhatsNewBlockFeature';
 
 const topContent = <>
   Раньше мы подключали тариф за 3–5 рабочих дней.
-  <Mark>Теперь подключение и оплата премиум-доступа проходят в моменте.</Mark>
+  Теперь <Mark>подключение и оплата премиум-доступа проходят в моменте.</Mark>
 </>;
 const bottomContent = 'Мы расширили функционал сервисов и сделали три тарифа. Выбирайте тот, который поможет вам проводить уроки удобнее всего. Бесплатный тариф также есть, а функций на нём стало больше';
 const title = <span className={styles.whatsNewBlockPremiumTitle}>
