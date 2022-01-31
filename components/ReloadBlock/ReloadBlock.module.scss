@@ -2,7 +2,7 @@
 
 .reloadBlock {
   display: flex;
-  margin-top: 19*$baseIndent;
+  margin-top: $block_margin_sm + 4*$baseIndent;
   @media (min-width: $xl) {
     padding-left: 12*$baseIndent;
   }

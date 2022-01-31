@@ -30,7 +30,7 @@ const cardsData = [
 ];
 
 function HeadBlock() {
-  return <BlockTemplate backgroundClassName={styles.headBlockBackground}>
+  return <BlockTemplate customClassName={styles.headBlockBackground}>
     <HeadBlockHeader/>
     <h1 className={styles.headBlockTitle}>
       Joyteka — для тех, кто хочет большего

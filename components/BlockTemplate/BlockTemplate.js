@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import styles from './BlockTemplate.module.scss';
 
 function BlockTemplate(props) {
-  const {children, backgroundClassName} = props;
-  return <div className={classnames(styles.blockTemplate, backgroundClassName)}>
+  const {children, customClassName} = props;
+  return <div className={classnames(styles.blockTemplate, customClassName)}>
     <div className={styles.blockTemplateContent}>
       {children}
     </div>
@@ -14,11 +14,11 @@ function BlockTemplate(props) {
 
 BlockTemplate.propTypes = {
   children: PropTypes.node.isRequired,
-  backgroundClassName: PropTypes.string,
+  customClassName: PropTypes.string,
 };
 
 BlockTemplate.defaultProps = {
-  backgroundClassName: null,
+  customClassName: null,
 };
 
 export default BlockTemplate;

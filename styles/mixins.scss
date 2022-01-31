@@ -390,3 +390,12 @@ $ld_color_link: #007aeb;
 
 /*Layout*/
 $baseIndent: 8px;
+$block_margin: 188px;
+$block_margin_sm: 120px;
+
+@mixin block_top_margin() {
+  margin-top: $block_margin;
+  @media (max-width: $md) {
+    margin-top: $block_margin_sm;
+  }
+}

@@ -13,4 +13,8 @@
       margin-bottom: 4*$baseIndent;
     }
   }
+
+  &Margin {
+    @include block_top_margin();
+  }
 }

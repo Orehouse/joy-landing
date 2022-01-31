@@ -22,7 +22,7 @@ const benefits = [
 ];
 
 function WhatsNewBlockSite() {
-  return <WhatsNewBlockFeature title={'Сайт'}>
+  return <WhatsNewBlockFeature noMargin title={'Сайт'}>
     <div className={styles.whatsNewBlockSiteCircle}>
       <Circle color={CIRCLE_COLOR.DEFAULT_GRADIENT}/>
     </div>
