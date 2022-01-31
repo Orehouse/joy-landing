@@ -3,7 +3,7 @@ import Circle, {CIRCLE_COLOR} from '../../Circle/Circle';
 import Image from 'next/image';
 import tanya from '../../../public/images/whatsnew/Tanya.png';
 import Mark from '../../ui/Mark/Mark';
-import WhatsNewBlockFeature from '../_Feature/WhatsNewBlockFeature';
+import WhatsNewBlockItem from '../_Item/WhatsNewBlockItem';
 import BenefitsList from '../../BenefitsList/BenefitsList';
 
 const benefits = [
@@ -22,7 +22,7 @@ const benefits = [
 ];
 
 function WhatsNewBlockSite() {
-  return <WhatsNewBlockFeature noMargin title={'Сайт'}>
+  return <WhatsNewBlockItem noMargin title={'Сайт'}>
     <div className={styles.whatsNewBlockSiteCircle}>
       <Circle color={CIRCLE_COLOR.DEFAULT_GRADIENT}/>
     </div>
@@ -48,7 +48,7 @@ function WhatsNewBlockSite() {
     <div className={styles.whatsNewBlockSiteBenefits}>
       <BenefitsList benefits={benefits}/>
     </div>
-  </WhatsNewBlockFeature>;
+  </WhatsNewBlockItem>;
 }
 
 export default WhatsNewBlockSite;
