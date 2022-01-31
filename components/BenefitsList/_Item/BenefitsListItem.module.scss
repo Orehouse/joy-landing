@@ -6,6 +6,7 @@
   padding: 3*$baseIndent 6*$baseIndent;
   border-radius: 15px;
   transition: ease-out 0.15s;
+  width: 100%;
   @media (max-width: $xl) {
     padding: 3*$baseIndent;
   }
