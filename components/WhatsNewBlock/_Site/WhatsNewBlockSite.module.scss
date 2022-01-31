@@ -96,6 +96,7 @@
 
   &TanyaSign {
     @include ld_font_medium();
+    @include ld_shadow_noHover();
     background-color: $ld_color_white;
     padding: 2*$baseIndent;
     margin-left: 3*$baseIndent;
