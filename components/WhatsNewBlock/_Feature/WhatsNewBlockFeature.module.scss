@@ -1,0 +1,19 @@
+@import "../../../styles/mixins";
+
+.whatsNewBlockFeature {
+  display: flex;
+
+  @media (max-width: $sm) {
+    flex-flow: column;
+  }
+
+  &Content {
+    flex-shrink: 0;
+  }
+
+  &Image {
+    @media (max-width: $sm) {
+      margin-top: 5*$baseIndent;
+    }
+  }
+}
