@@ -1,0 +1,15 @@
+.whatsNewBlockPremium {
+  &Title {
+    &:before {
+      content: ' ';
+      position: absolute;
+      display: block;
+      width: 48px;
+      height: 32px;
+      background-image: url("../../../public/images/whatsnew/premium_sm.svg");
+      background-repeat: no-repeat;
+      top: -32px;
+      left: 32px;
+    }
+  }
+}
