@@ -1,0 +1,38 @@
+@import "../../styles/mixins";
+
+.textBlock {
+  color: $ld_color_black;
+  width: 360px;
+
+  @media (max-width: $xl) {
+    width: 312px;
+  }
+  @media (max-width: $lg) {
+    width: 300px;
+  }
+  @media (max-width: $md) {
+    width: 264px;
+  }
+  @media (max-width: $sm) {
+    width: 288px;
+  }
+
+  &TopContent {
+    @include ld_font_h4();
+    border-bottom: 1px solid $ld_color_darkGreen;
+    padding-bottom: 3*$baseIndent;
+
+    @media (max-width: $lg) {
+      padding-bottom: 2*$baseIndent;
+    }
+  }
+
+  &BottomContent {
+    @include ld_font_text();
+    margin-top: 4*$baseIndent;
+
+    @media (max-width: $lg) {
+      margin-top: 3*$baseIndent;
+    }
+  }
+}
