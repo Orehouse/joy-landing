@@ -3,6 +3,10 @@
 .whatsNewBlockFeature {
   display: flex;
 
+  &_reverse {
+    flex-flow: row-reverse;
+  }
+
   @media (max-width: $sm) {
     flex-flow: column;
   }
@@ -12,8 +16,29 @@
   }
 
   &Image {
+    margin-left: $baseIndent;
+    flex-shrink: 1;
+    width: 100%;
     @media (max-width: $sm) {
       margin-top: 5*$baseIndent;
+      margin-left: 0;
+    }
+  }
+
+  &Circle {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &_right {
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+
+    &_left {
+      left: 0;
+      transform: translate(-50%, -50%);
     }
   }
 }
