@@ -1,8 +1,9 @@
 import BlockTemplate from '../BlockTemplate/BlockTemplate';
-
-import styles from './WhatsNewBlock.module.scss';
 import WhatsNewBlockSite from './_Site/WhatsNewBlockSite';
 import WhatsNewBlockPremium from './_Premium/WhatsNewBlockPremium';
+import WhatsNewBlockCabinet from './_Cabinet/WhatsNewBlockCabinet';
+
+import styles from './WhatsNewBlock.module.scss';
 
 function WhatsNewBlock() {
   return <BlockTemplate>
@@ -13,6 +14,7 @@ function WhatsNewBlock() {
 
       <WhatsNewBlockSite/>
       <WhatsNewBlockPremium/>
+      <WhatsNewBlockCabinet/>
     </div>
   </BlockTemplate>;
 }
