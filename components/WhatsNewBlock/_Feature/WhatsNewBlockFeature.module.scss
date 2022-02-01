@@ -2,13 +2,27 @@
 
 .whatsNewBlockFeature {
   display: flex;
+  gap: 12*$baseIndent;
 
-  &_reverse {
-    flex-flow: row-reverse;
+  @media (max-width: $xl) {
+    gap: 9*$baseIndent;
+  }
+
+  @media (max-width: $lg) {
+    gap: 3.75*$baseIndent;
+  }
+
+  @media (max-width: $md) {
+    gap: 3*$baseIndent;
   }
 
   @media (max-width: $sm) {
+    gap: 5*$baseIndent;
     flex-flow: column;
+  }
+
+  &_reverse {
+    flex-flow: row-reverse;
   }
 
   &Content {
@@ -16,13 +30,8 @@
   }
 
   &Image {
-    margin-left: $baseIndent;
     flex-shrink: 1;
     width: 100%;
-    @media (max-width: $sm) {
-      margin-top: 5*$baseIndent;
-      margin-left: 0;
-    }
   }
 
   &Circle {

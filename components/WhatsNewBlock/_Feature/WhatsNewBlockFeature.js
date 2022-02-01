@@ -11,6 +11,8 @@ export const CONTENT_ALIGN = {
   LEFT: 'LEFT',
 };
 
+export {CIRCLE_COLOR};
+
 function WhatsNewBlockFeature(props) {
   const {children, image, contentAlign, circleColor} = props;
   return <div className={classnames(
