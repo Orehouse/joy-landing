@@ -4,14 +4,22 @@ import PropTypes from 'prop-types';
 import styles from './TextBlock.module.scss';
 
 export const TEXT_BLOCK_SIZE = {
-  MEDIUM: styles.textBlock_medium,
-  LARGE: styles.textBlock_large,
+  MEDIUM: '_medium',
+  LARGE: '_large',
 };
 
 function TextBlock(props) {
   const {topContent, bottomContent, size} = props;
-  return <div className={classnames(styles.textBlock, size)}>
-    <div className={styles.textBlockTopContent}>{topContent}</div>
+  return <div className={classnames(
+      styles.textBlock,
+      size && styles[`textBlock${size}`],
+  )}>
+    <div className={classnames(
+        styles.textBlockTopContent,
+        size && styles[`textBlockTopContent${size}`],
+    )}>
+      {topContent}
+    </div>
     <div className={styles.textBlockBottomContent}>{bottomContent}</div>
   </div>;
 }

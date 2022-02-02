@@ -41,18 +41,20 @@
     @include ld_font_h4();
     border-bottom: 1px solid $ld_color_darkGreen;
     padding-bottom: 3*$baseIndent;
+    margin-bottom: 4*$baseIndent;
 
     @media (max-width: $lg) {
       padding-bottom: 2*$baseIndent;
+      margin-bottom: 3*$baseIndent;
+    }
+
+    &_large {
+      padding-bottom: 6*$baseIndent;
+      margin-bottom: 6*$baseIndent;
     }
   }
 
   &BottomContent {
     @include ld_font_text();
-    margin-top: 4*$baseIndent;
-
-    @media (max-width: $lg) {
-      margin-top: 3*$baseIndent;
-    }
   }
 }
