@@ -1,0 +1,39 @@
+@import "../../../styles/mixins";
+
+.whatsNewBlockCertificate {
+  &Item {
+    &:not(:first-of-type) {
+      margin-top: 48px;
+    }
+
+    display: flex;
+    align-items: center;
+
+    &Icon {
+      flex-shrink: 0;
+      width: 58px;
+      margin-right: 86px;
+
+      @media (max-width: $xl) {
+        width: 58px;
+        margin-right: 32px;
+      }
+      @media (max-width: $lg) {
+        width: 46px;
+        margin-right: 32px;
+      }
+      @media (max-width: $md) {
+        width: 34px;
+        margin-right: 24px;
+      }
+      @media (max-width: $sm) {
+        width: 34px;
+        margin-right: 24px;
+      }
+    }
+
+    .Text {
+      flex-shrink: 1
+    }
+  }
+}
