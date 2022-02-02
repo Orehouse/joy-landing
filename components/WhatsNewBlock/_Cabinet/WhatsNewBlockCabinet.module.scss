@@ -1,0 +1,9 @@
+@import "../../../styles/mixins";
+
+.whatsNewBlockCabinet {
+  &Benefits {
+    display: flex;
+    flex-flow: row-reverse;
+    margin-top: 10*$baseIndent;
+  }
+}
