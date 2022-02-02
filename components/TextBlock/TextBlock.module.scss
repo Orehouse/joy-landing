@@ -2,19 +2,39 @@
 
 .textBlock {
   color: $ld_color_black;
-  width: 360px;
 
-  @media (max-width: $xl) {
-    width: 312px;
+  &_medium {
+    width: 360px;
+
+    @media (max-width: $xl) {
+      width: 312px;
+    }
+    @media (max-width: $lg) {
+      width: 300px;
+    }
+    @media (max-width: $md) {
+      width: 264px;
+    }
+    @media (max-width: $sm) {
+      width: 288px;
+    }
   }
-  @media (max-width: $lg) {
-    width: 300px;
-  }
-  @media (max-width: $md) {
-    width: 264px;
-  }
-  @media (max-width: $sm) {
-    width: 288px;
+
+  &_large {
+    width: 575px;
+
+    @media (max-width: $xl) {
+      width: 408px;
+    }
+    @media (max-width: $lg) {
+      width: 330px;
+    }
+    @media (max-width: $md) {
+      width: 264px;
+    }
+    @media (max-width: $sm) {
+      width: 288px;
+    }
   }
 
   &TopContent {
