@@ -4,6 +4,7 @@ import WhatsNewBlockPremium from './_Premium/WhatsNewBlockPremium';
 import WhatsNewBlockCabinet from './_Cabinet/WhatsNewBlockCabinet';
 
 import styles from './WhatsNewBlock.module.scss';
+import WhatsNewBlockCertificate from './_Certificate/WhatsNewBlockCertificate';
 
 function WhatsNewBlock() {
   return <BlockTemplate>
@@ -14,6 +15,7 @@ function WhatsNewBlock() {
 
       <WhatsNewBlockSite/>
       <WhatsNewBlockPremium/>
+      <WhatsNewBlockCertificate/>
       <WhatsNewBlockCabinet/>
     </div>
   </BlockTemplate>;
