@@ -20,7 +20,7 @@ const topContent = <>
   можете заказывать <Mark color={MARK_COLOR.TURQUOISE_BRIGHT}>сертификаты на все
   5 сервисов.</Mark>
 </>;
-const bottomContent = <div>
+const bottomContent = <>
   <div className={styles.whatsNewBlockCertificateItem}>
     <div className={styles.whatsNewBlockCertificateItemIcon}>
       <Image src={mailIcon} alt="Вышлем сертификат"/>
@@ -38,7 +38,7 @@ const bottomContent = <div>
       вы вводите, будет отражаться на экране рядом.
     </div>
   </div>
-</div>;
+</>;
 
 function WhatsNewBlockCertificate() {
   return <WhatsNewBlockItem title={title}>
