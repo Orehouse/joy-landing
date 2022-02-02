@@ -6,6 +6,8 @@ import styles from './Circle.module.scss';
 export const CIRCLE_COLOR = {
   DEFAULT_GRADIENT: styles.circleDefaultGradient,
   TURQUOISE: styles.circleTurquoise,
+  YELLOW_GRADIENT: styles.circleYellowGradient,
+  DARK_GREEN: styles.circleDarkGreen,
 };
 
 export const CIRCLE_SIZE = {

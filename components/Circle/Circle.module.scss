@@ -18,6 +18,14 @@ $normalSize_xs: 400px;
     background: $ld_color_turquoise;
   }
 
+  &YellowGradient {
+    background: $ld_color_g2;
+  }
+
+  &DarkGreen {
+    background: $ld_color_darkGreen;
+  }
+
   &NormalSize {
     width: $normalSize;
     height: $normalSize;

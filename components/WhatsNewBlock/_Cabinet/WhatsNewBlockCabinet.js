@@ -8,8 +8,8 @@ import WhatsNewBlockFeature, {
 } from '../_Feature/WhatsNewBlockFeature';
 
 const topContent = <>
-  {'В меню добавили ваш профиль — '}
-  <Mark>можете в любой момент посмотреть логин, пароль и ваш тариф.</Mark>
+  В меню добавили ваш профиль — <Mark>можете в любой момент посмотреть логин,
+  пароль и ваш тариф.</Mark>
 </>;
 const bottomContent = 'А ещё теперь видна дата, до которой тариф оплачен. Можете оплатить следующий месяц заранее, чтобы не потерять доступ к платным функциям.';
 const title = 'Личный кабинет';
@@ -19,7 +19,7 @@ function WhatsNewBlockCabinet() {
     <WhatsNewBlockFeature
         image={cabinetImg}
         contentAlign={CONTENT_ALIGN.LEFT}
-        circleColor={CIRCLE_COLOR.TURQUOISE}
+        circleColor={CIRCLE_COLOR.DARK_GREEN}
     >
       <TextBlock topContent={topContent} bottomContent={bottomContent}/>
     </WhatsNewBlockFeature>
