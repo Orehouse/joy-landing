@@ -14,7 +14,7 @@ export const CONTENT_ALIGN = {
 export {CIRCLE_COLOR};
 
 function WhatsNewBlockFeature(props) {
-  const {children, image, contentAlign, circleColor} = props;
+  const {children, image, alt, contentAlign, circleColor, imageShadow} = props;
   return <div className={classnames(
       styles.whatsNewBlockFeature,
       contentAlign === CONTENT_ALIGN.RIGHT &&
@@ -31,8 +31,11 @@ function WhatsNewBlockFeature(props) {
     <div className={styles.whatsNewBlockFeatureContent}>
       {children}
     </div>
-    <div className={styles.whatsNewBlockFeatureImage}>
-      <Image alt="Тарифы" src={image}/>
+    <div className={classnames(
+        styles.whatsNewBlockFeatureImage,
+        imageShadow && styles.whatsNewBlockFeatureImage_shadow)}
+    >
+      <Image alt={alt} src={image}/>
     </div>
   </div>;
 }
@@ -40,6 +43,8 @@ function WhatsNewBlockFeature(props) {
 WhatsNewBlockFeature.propTypes = {
   children: PropTypes.node.isRequired,
   image: PropTypes.object.isRequired,
+  imageShadow: PropTypes.bool,
+  alt: PropTypes.string.isRequired,
   circleColor: PropTypes.oneOf(Object.values(CIRCLE_COLOR)),
   contentAlign: PropTypes.oneOf(Object.values(CONTENT_ALIGN)),
 };
@@ -47,6 +52,7 @@ WhatsNewBlockFeature.propTypes = {
 WhatsNewBlockFeature.defaultProps = {
   circleColor: CIRCLE_COLOR.TURQUOISE,
   contentAlign: CONTENT_ALIGN.LEFT,
+  imageShadow: false,
 };
 
 export default WhatsNewBlockFeature;

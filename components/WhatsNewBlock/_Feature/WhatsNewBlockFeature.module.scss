@@ -32,6 +32,11 @@
   &Image {
     flex-shrink: 1;
     width: 100%;
+    display: flex;
+
+    &_shadow {
+      @include ld_shadow_noHover();
+    }
   }
 
   &Circle {
