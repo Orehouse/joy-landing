@@ -22,6 +22,7 @@ function WhatsNewBlockPremium() {
   return <WhatsNewBlockItem title={title}>
     <WhatsNewBlockFeature
         image={tariffImg}
+        alt="Тарифы"
         contentAlign={CONTENT_ALIGN.LEFT}
         circleColor={CIRCLE_COLOR.TURQUOISE}
     >

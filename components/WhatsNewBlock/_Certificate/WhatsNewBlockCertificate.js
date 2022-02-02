@@ -44,6 +44,7 @@ function WhatsNewBlockCertificate() {
   return <WhatsNewBlockItem title={title}>
     <WhatsNewBlockFeature
         image={certificate}
+        alt="Сертификат"
         contentAlign={CONTENT_ALIGN.RIGHT}
         circleColor={CIRCLE_COLOR.YELLOW_GRADIENT}
     >
