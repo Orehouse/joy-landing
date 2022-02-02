@@ -1,6 +1,7 @@
 @import "../../../styles/mixins";
 
 .whatsNewBlockFeature {
+  position: relative;
   display: flex;
   gap: 12*$baseIndent;
 
