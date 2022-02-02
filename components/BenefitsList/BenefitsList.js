@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {createRef, useEffect, useState} from 'react';
 
 import BenefitsListItem from './_Item/BenefitsListItem';
@@ -72,5 +73,12 @@ function BenefitsList(props) {
         />)}
   </div>;
 }
+
+BenefitsList.propTypes = {
+  benefits: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  })),
+};
 
 export default BenefitsList;
