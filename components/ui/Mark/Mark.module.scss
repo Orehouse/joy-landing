@@ -1,5 +1,11 @@
 @import "../../../styles/mixins";
 
 .mark {
-  background-color: rgba($ld_color_yellow, 0.6);
+  &Yellow {
+    background-color: rgba($ld_color_yellow, 0.6);
+  }
+
+  &Turquoise {
+    background-color: rgba($ld_color_brightTurquoise, 0.6);
+  }
 }
