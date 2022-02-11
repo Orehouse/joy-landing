@@ -12,6 +12,7 @@ export const CIRCLE_COLOR = {
 
 export const CIRCLE_SIZE = {
   NORMAL: styles.circleNormalSize,
+  BIG: styles.circleBigSize,
 };
 
 function Circle(props) {
