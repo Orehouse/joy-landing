@@ -1,0 +1,46 @@
+@use "sass:math";
+@import '../../styles/mixins';
+
+$width: 40px;
+$width_lg: 28px;
+$height: 64px;
+$height_lg: 46px;
+
+.prosCons {
+  position: relative;
+
+  &:before {
+    z-index: -1;
+    content: ' ';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: $width;
+    height: $height;
+    left: -$width;
+    top: - math.div($height, 3);
+
+    @media (max-width: $lg) {
+      width: $width_lg;
+      height: $height_lg;
+      left: -$width_lg;
+      top: - math.div($height_lg, 3);
+    }
+
+    @media (max-width: $sm) {
+      width: $width;
+      height: $height;
+      left: -$width;
+      top: - math.div($height, 3);
+    }
+  }
+
+  &Pros:before {
+    background-image: url("../../public/images/ui/pros.svg");
+  }
+
+  &Cons:before {
+    background-image: url("../../public/images/ui/cons.svg");
+  }
+}
