@@ -36,6 +36,8 @@
 
     &_shadow {
       @include ld_shadow_noHover();
+      border-radius: 15px;
+      overflow: hidden;
     }
   }
 

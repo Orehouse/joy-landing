@@ -42,7 +42,7 @@ function FeatureItem(props) {
   </div>;
 }
 
-FeatureItem.propTypes = {
+export const FeatureItemPropTypes = {
   children: PropTypes.node.isRequired,
   image: PropTypes.object.isRequired,
   imageShadow: PropTypes.bool,
@@ -50,6 +50,8 @@ FeatureItem.propTypes = {
   circleColor: PropTypes.oneOf(Object.values(CIRCLE_COLOR)),
   contentAlign: PropTypes.oneOf(Object.values(CONTENT_ALIGN)),
 };
+
+FeatureItem.propTypes = FeatureItemPropTypes;
 
 FeatureItem.defaultProps = {
   circleColor: CIRCLE_COLOR.TURQUOISE,
