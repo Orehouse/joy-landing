@@ -4,10 +4,10 @@ import Mark from '../../ui/Mark/Mark';
 
 import styles from './WhatsNewBlockPremium.module.scss';
 import tariffImg from '../../../public/images/whatsnew/tariff.png';
-import WhatsNewBlockFeature, {
+import FeatureItem, {
   CIRCLE_COLOR,
   CONTENT_ALIGN,
-} from '../_Feature/WhatsNewBlockFeature';
+} from '../../FeatureItem/FeatureItem';
 
 const topContent = <>
   Раньше мы подключали тариф за 3–5 рабочих дней.
@@ -20,14 +20,14 @@ const title = <span className={styles.whatsNewBlockPremiumTitle}>
 
 function WhatsNewBlockPremium() {
   return <WhatsNewBlockItem title={title}>
-    <WhatsNewBlockFeature
+    <FeatureItem
         image={tariffImg}
         alt="Тарифы"
         contentAlign={CONTENT_ALIGN.LEFT}
         circleColor={CIRCLE_COLOR.TURQUOISE}
     >
       <TextBlock topContent={topContent} bottomContent={bottomContent}/>
-    </WhatsNewBlockFeature>
+    </FeatureItem>
   </WhatsNewBlockItem>;
 }
 

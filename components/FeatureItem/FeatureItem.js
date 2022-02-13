@@ -2,9 +2,9 @@ import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import Image from 'next/image';
 
-import Circle, {CIRCLE_COLOR} from '../../Circle/Circle';
+import Circle, {CIRCLE_COLOR} from '../Circle/Circle';
 
-import styles from './WhatsNewBlockFeature.module.scss';
+import styles from './FeatureItem.module.scss';
 
 export const CONTENT_ALIGN = {
   RIGHT: 'RIGHT',
@@ -13,26 +13,26 @@ export const CONTENT_ALIGN = {
 
 export {CIRCLE_COLOR};
 
-function WhatsNewBlockFeature(props) {
+function FeatureItem(props) {
   const {children, image, alt, contentAlign, circleColor, imageShadow} = props;
   return <div className={classnames(
-      styles.whatsNewBlockFeature,
+      styles.featureItem,
       contentAlign === CONTENT_ALIGN.RIGHT &&
-      styles.whatsNewBlockFeature_reverse,
+      styles.featureItem_reverse,
   )}>
     <div className={classnames(
-        styles.whatsNewBlockFeatureCircle,
+        styles.featureItemCircle,
         contentAlign === CONTENT_ALIGN.RIGHT
-            ? styles.whatsNewBlockFeatureCircle_left
-            : styles.whatsNewBlockFeatureCircle_right,
+            ? styles.featureItemCircle_left
+            : styles.featureItemCircle_right,
     )}>
       <Circle color={circleColor}/>
     </div>
-    <div className={styles.whatsNewBlockFeatureContent}>
+    <div className={styles.featureItemContent}>
       {children}
     </div>
-    <div className={styles.whatsNewBlockFeatureImage}>
-      <div className={imageShadow && styles.whatsNewBlockFeatureImage_shadow}>
+    <div className={styles.featureItemImage}>
+      <div className={imageShadow && styles.featureItemImage_shadow}>
         <Image alt={alt} src={image}
                layout={'responsive'} sizes={'100vw'}
                quality={100} lazyBoundary={'300px'}
@@ -42,7 +42,7 @@ function WhatsNewBlockFeature(props) {
   </div>;
 }
 
-WhatsNewBlockFeature.propTypes = {
+FeatureItem.propTypes = {
   children: PropTypes.node.isRequired,
   image: PropTypes.object.isRequired,
   imageShadow: PropTypes.bool,
@@ -51,10 +51,10 @@ WhatsNewBlockFeature.propTypes = {
   contentAlign: PropTypes.oneOf(Object.values(CONTENT_ALIGN)),
 };
 
-WhatsNewBlockFeature.defaultProps = {
+FeatureItem.defaultProps = {
   circleColor: CIRCLE_COLOR.TURQUOISE,
   contentAlign: CONTENT_ALIGN.LEFT,
   imageShadow: false,
 };
 
-export default WhatsNewBlockFeature;
+export default FeatureItem;

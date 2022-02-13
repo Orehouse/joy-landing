@@ -1,10 +1,10 @@
 import Image from 'next/image';
 
 import WhatsNewBlockItem from '../_Item/WhatsNewBlockItem';
-import WhatsNewBlockFeature, {
+import FeatureItem, {
   CIRCLE_COLOR,
   CONTENT_ALIGN,
-} from '../_Feature/WhatsNewBlockFeature';
+} from '../../FeatureItem/FeatureItem';
 import TextBlock, {TEXT_BLOCK_SIZE} from '../../TextBlock/TextBlock';
 
 import certificate from '../../../public/images/whatsnew/certificate.png';
@@ -42,7 +42,7 @@ const bottomContent = <>
 
 function WhatsNewBlockCertificate() {
   return <WhatsNewBlockItem title={title}>
-    <WhatsNewBlockFeature
+    <FeatureItem
         image={certificate}
         alt="Сертификат"
         contentAlign={CONTENT_ALIGN.RIGHT}
@@ -53,7 +53,7 @@ function WhatsNewBlockCertificate() {
           bottomContent={bottomContent}
           size={TEXT_BLOCK_SIZE.LARGE}
       />
-    </WhatsNewBlockFeature>
+    </FeatureItem>
   </WhatsNewBlockItem>;
 }
 

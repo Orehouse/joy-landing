@@ -2,10 +2,10 @@ import WhatsNewBlockItem from '../_Item/WhatsNewBlockItem';
 import TextBlock from '../../TextBlock/TextBlock';
 import Mark from '../../ui/Mark/Mark';
 import cabinetImg from '../../../public/images/whatsnew/cabinet.png';
-import WhatsNewBlockFeature, {
+import FeatureItem, {
   CIRCLE_COLOR,
   CONTENT_ALIGN,
-} from '../_Feature/WhatsNewBlockFeature';
+} from '../../FeatureItem/FeatureItem';
 import BenefitsList from '../../BenefitsList/BenefitsList';
 
 import styles from './WhatsNewBlockCabinet.module.scss';
@@ -34,7 +34,7 @@ const benefits = [
 
 function WhatsNewBlockCabinet() {
   return <WhatsNewBlockItem title={title}>
-    <WhatsNewBlockFeature
+    <FeatureItem
         image={cabinetImg}
         imageShadow
         alt="Кабинет"
@@ -42,7 +42,7 @@ function WhatsNewBlockCabinet() {
         circleColor={CIRCLE_COLOR.DARK_GREEN}
     >
       <TextBlock topContent={topContent} bottomContent={bottomContent}/>
-    </WhatsNewBlockFeature>
+    </FeatureItem>
     <div className={styles.whatsNewBlockCabinetBenefits}>
       <BenefitsList benefits={benefits}/>
     </div>
