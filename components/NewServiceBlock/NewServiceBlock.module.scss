@@ -95,6 +95,8 @@
 
     &Pattern {
       position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       opacity: 0.3;
@@ -113,6 +115,28 @@
       }
       @media (max-width: $sm) {
         background-size: 130px 140px;
+      }
+    }
+
+    &Features {
+      display: flex;
+
+      @media (min-width: $xl) {
+        & > * {
+          flex: 1;
+        }
+      }
+
+      margin-top: 15*$baseIndent;
+
+      @media (max-width: $xl) {
+        flex-direction: column;
+      }
+      @media (max-width: $md) {
+        margin-top: 14*$baseIndent;
+      }
+      @media (max-width: $sm) {
+        margin-top: 9*$baseIndent;
       }
     }
   }

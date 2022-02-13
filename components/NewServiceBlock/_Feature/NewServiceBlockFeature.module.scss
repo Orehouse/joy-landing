@@ -1,0 +1,66 @@
+@import "../../../styles/mixins";
+
+.newServiceBlockFeature {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $xl) {
+    @for $i from 0 through 2 {
+      &:nth-of-type(#{$i+1}) {
+        margin-top: $i * 120px;
+      }
+    }
+    &:nth-of-type(-n+2) {
+      margin-right: 36px;
+    }
+  }
+  @media (max-width: $xl) {
+    flex-direction: row;
+    &:nth-of-type(-n+2) {
+      margin-bottom: 8*$baseIndent;
+    }
+
+  }
+  @media (max-width: $sm) {
+    flex-direction: column;
+  }
+
+  &TextBlock {
+    @media (max-width: $xl) {
+      flex-shrink: 0;
+      width: 360px;
+      margin-left: 12*$baseIndent;
+    }
+    @media (max-width: $lg) {
+      width: 270px;
+      margin-left: 5*$baseIndent;
+    }
+    @media (max-width: $md) {
+      width: 216px;
+      margin-left: 3*$baseIndent;
+    }
+    @media (max-width: $sm) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  &Title {
+    @include ld_font_medium();
+    @media (min-width: $xl) {
+      margin-top: 4*$baseIndent;
+    }
+    @media (max-width: $sm) {
+      margin-top: 4*$baseIndent;
+    }
+  }
+
+  &Description {
+    @include ld_font_text();
+    margin-top: 2*$baseIndent;
+  }
+
+  &Image {
+    @include ld_shadow_noHover();
+    width: 100%;
+  }
+}

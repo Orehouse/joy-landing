@@ -5,6 +5,32 @@ import Circle, {CIRCLE_COLOR, CIRCLE_SIZE} from '../Circle/Circle';
 import classNames from 'classnames';
 import {Cons, Pros} from '../ProsCons/ProsCons';
 
+import questionsImg from '../../public/images/newservice/questions.jpg';
+import settingsImg from '../../public/images/newservice/settings.jpg';
+import statisticsImg from '../../public/images/newservice/statistics.jpg';
+import NewServiceBlockFeature from './_Feature/NewServiceBlockFeature';
+
+const features = [
+  {
+    image: questionsImg,
+    alt: 'Добавляйте разные типы вопросов',
+    title: 'Добавляйте разные типы вопросов',
+    description: 'Открытые, с множественным и одиночным выбором, с картинкой для подсказки.',
+  },
+  {
+    image: settingsImg,
+    alt: 'Используйте дополнительные настройки',
+    title: 'Используйте дополнительные настройки',
+    description: 'Установите дату, до которой ученикам нужно пройти тест, поставьте таймер на прохождение теста и каждого вопроса, включите пропуск вопросов.',
+  },
+  {
+    image: statisticsImg,
+    alt: 'Смотрите результаты в личном кабинете',
+    title: 'Смотрите результаты в личном кабинете',
+    description: 'С автопроверкой вы сможете увидеть, как ученики прошли тест, а также показать результаты прохождения им.',
+  },
+];
+
 function NewServiceBlock() {
   return <BlockTemplate>
     <div className={styles.newServiceBlock}>
@@ -38,10 +64,11 @@ function NewServiceBlock() {
           </Pros>
         </div>
       </div>
+      <div className={styles.newServiceBlockBGFeatures}>
+        {features.map((f, i) => (<NewServiceBlockFeature key={i} {...f}/>))}
+      </div>
     </div>
-    ;
-  </BlockTemplate>
-      ;
+  </BlockTemplate>;
 }
 
 export default NewServiceBlock;
