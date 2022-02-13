@@ -31,10 +31,8 @@
   }
 
   &Image {
-    flex-shrink: 1;
     width: 100%;
-    display: flex;
-    align-self: flex-start;
+    display: block;
 
     &_shadow {
       @include ld_shadow_noHover();

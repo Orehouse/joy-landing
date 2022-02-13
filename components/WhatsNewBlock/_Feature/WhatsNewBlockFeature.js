@@ -31,11 +31,13 @@ function WhatsNewBlockFeature(props) {
     <div className={styles.whatsNewBlockFeatureContent}>
       {children}
     </div>
-    <div className={classnames(
-        styles.whatsNewBlockFeatureImage,
-        imageShadow && styles.whatsNewBlockFeatureImage_shadow)}
-    >
-      <Image alt={alt} src={image}/>
+    <div className={styles.whatsNewBlockFeatureImage}>
+      <div className={imageShadow && styles.whatsNewBlockFeatureImage_shadow}>
+        <Image alt={alt} src={image}
+               layout={'responsive'} sizes={'100vw'}
+               quality={100} lazyBoundary={'300px'}
+        />
+      </div>
     </div>
   </div>;
 }
