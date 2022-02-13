@@ -50,11 +50,19 @@
     &_right {
       right: 0;
       transform: translate(50%, -50%);
+
+      &_centered {
+        transform: translate(0, -50%);
+      }
     }
 
     &_left {
       left: 0;
       transform: translate(-50%, -50%);
+
+      &_centered {
+        transform: translate(0, -50%);
+      }
     }
   }
 }

@@ -14,7 +14,15 @@ export const CONTENT_ALIGN = {
 export {CIRCLE_COLOR};
 
 function FeatureItem(props) {
-  const {children, image, alt, contentAlign, circleColor, imageShadow} = props;
+  const {
+    children,
+    image,
+    alt,
+    contentAlign,
+    circleColor,
+    imageShadow,
+    circleCentered,
+  } = props;
   return <div className={classnames(
       styles.featureItem,
       contentAlign === CONTENT_ALIGN.RIGHT &&
@@ -25,6 +33,9 @@ function FeatureItem(props) {
         contentAlign === CONTENT_ALIGN.RIGHT
             ? styles.featureItemCircle_left
             : styles.featureItemCircle_right,
+        circleCentered && (contentAlign === CONTENT_ALIGN.RIGHT
+            ? styles.featureItemCircle_left_centered
+            : styles.featureItemCircle_right_centered)
     )}>
       <Circle color={circleColor}/>
     </div>
@@ -49,6 +60,7 @@ export const FeatureItemPropTypes = {
   alt: PropTypes.string.isRequired,
   circleColor: PropTypes.oneOf(Object.values(CIRCLE_COLOR)),
   contentAlign: PropTypes.oneOf(Object.values(CONTENT_ALIGN)),
+  circleCentered: PropTypes.bool,
 };
 
 FeatureItem.propTypes = FeatureItemPropTypes;
@@ -57,6 +69,7 @@ FeatureItem.defaultProps = {
   circleColor: CIRCLE_COLOR.TURQUOISE,
   contentAlign: CONTENT_ALIGN.LEFT,
   imageShadow: false,
+  circleCentered: false,
 };
 
 export default FeatureItem;
