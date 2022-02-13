@@ -1,0 +1,29 @@
+@import "../../styles/mixins";
+
+.readyNowBlock {
+  @include block_top_margin();
+  position: relative;
+
+  &Title {
+    @include ld_font_h2();
+  }
+
+  &Features {
+    margin-top: 15*$baseIndent;
+    @media (max-width: $lg) {
+      margin-top: 12*$baseIndent;
+    }
+    @media (max-width: $sm) {
+      margin-top: 9*$baseIndent;
+    }
+  }
+
+  &SmileContainer {
+    display: flex;
+
+    span {
+      margin-left: $baseIndent;
+    }
+  }
+
+}

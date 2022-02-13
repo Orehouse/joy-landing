@@ -3,6 +3,7 @@ import ReloadBlock from '../components/ReloadBlock/ReloadBlock';
 import WhatsNewBlock from '../components/WhatsNewBlock/WhatsNewBlock';
 import MainContainer from '../components/MainContainer/MainContainer';
 import NewServiceBlock from '../components/NewServiceBlock/NewServiceBlock';
+import ReadyNowBlock from '../components/ReadyNowBlock/ReadyNowBlock';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <ReloadBlock/>
         <WhatsNewBlock/>
         <NewServiceBlock/>
+        <ReadyNowBlock/>
       </MainContainer>
   );
 }

@@ -1,0 +1,40 @@
+@import "../../../styles/mixins";
+
+.readyNowBlockFeature {
+  &:not(:first-of-type) {
+    margin-top: 15*$baseIndent;
+
+    @media (max-width: $md) {
+      margin-top: 18*$baseIndent;
+    }
+
+    @media (max-width: $sm) {
+      margin-top: 15*$baseIndent;
+    }
+  }
+  
+  &Title {
+    position: relative;
+    margin-bottom: 6*$baseIndent;
+
+    @media (max-width: $md) {
+      margin-bottom: 5*$baseIndent;
+    }
+
+    @media (max-width: $sm) {
+      margin-bottom: 3*$baseIndent;
+    }
+
+    &Text {
+      @include ld_font_h3();
+    }
+
+    &Index {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -55%);
+    }
+  }
+}
