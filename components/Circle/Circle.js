@@ -8,6 +8,7 @@ export const CIRCLE_COLOR = {
   TURQUOISE: styles.circleTurquoise,
   YELLOW_GRADIENT: styles.circleYellowGradient,
   DARK_GREEN: styles.circleDarkGreen,
+  ORANGE: styles.circleOrange,
 };
 
 export const CIRCLE_SIZE = {
