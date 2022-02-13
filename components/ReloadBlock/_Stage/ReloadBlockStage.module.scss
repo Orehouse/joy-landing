@@ -1,14 +1,6 @@
 @import "../../../styles/mixins";
 
 .reloadBlockStage {
-  &Label {
-    font-family: "Russo One", serif;
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 81px;
-    color: rgba($ld_color_turquoise, 0.3);
-  }
-
   &Description {
     margin-left: 3*$baseIndent;
     margin-top: -4*$baseIndent;
